@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 型態選擇器 */
+        a{
+            font-size: 30px;
+        }
+        /* CLASS選擇器 */
+        .s1{
+            background-color: yellow;
+            color:green;
+        }
+        .s2{
+            background-color: blue;
+        }
+        /* ID選擇器 */
+        #id1{
+            background-color: pink;
+        }
+        #id2{
+            color:green;
+        }
+        /* 通用選擇器 */
+        *{
+            font-size: 40px;
+        }
+        /* 屬性選擇器 */
+        input[type=text]{
+            width:100px;
+        }
+        /* 後代選擇器 */
+        ol li{
+            color:blue;
+        }
+        ul li{
+            color: red;
+        }
+
+        .child a{
+            color:yellow;
+        }
+        /* 子選擇器 */
+        .child>a{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <span class="child">
+        <a href="#">A</a>
+    </span>
+    <span class="child">
+        <span>
+            <a href="#">B</a>
+        </span>
+    </span>
+    <br>
+    <span class="s1" id="id1">span</span>
+    <a href="#" class="s1 s2">google</a>
+    <a href="#">Youtube</a>
+    <span>span2</span>
+    <br>
+    <input type="text">學號
+    <input type="text">姓名
+    <br>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+</body>
+</html>
